@@ -13,7 +13,6 @@
    * [Usage](#usage)
    * [License](#license)
    * [Contribution](#contribution)
-   * [Tests](#tests)
    * [Questions](#questions)
  
  
@@ -43,9 +42,6 @@
  
  ## Contribution
    One can contribute by cloning the repo from the github page, adding a new branch, and pushing changes to the main branch. 
- 
- ## Tests
-   Testing can be done by using a RESTful api/server side app like POSTMAN or INSMONIA to debug and test all CRUD commands. 
  
  ## Questions
    If you have any questions, please email me at: knickler3@gmail.com <br/>
