@@ -104,12 +104,14 @@ const windSpeedMph = windSpeedMetersPerSecond * 2.23694; // Convert wind speed t
 
       const forecastDayHTML = `
           <div class="forecast-card">
+          <div class="cardBack">
               <p class="date">${i === 0 ? 'Today' : forecastDate.toDateString()}</p>
               <img src="${iconURL}" alt="${day.weather[0].description}">
               <p><b>Temperature:</b> ${temperatureFahrenheitForecast.toFixed(2)}°F</p>
               <p><b>Humidity:</b> ${day.main.humidity}%</p>
               <p><b>Wind Speed:</b> ${windSpeedMphForecast.toFixed(2)} mph</p>
           </div>
+            </div>
       `;
       forecastContainer.innerHTML += forecastDayHTML;
   }
