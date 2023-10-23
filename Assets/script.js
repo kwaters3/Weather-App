@@ -95,8 +95,8 @@ const windSpeedMph = windSpeedMetersPerSecond * 2.23694; // Convert wind speed t
   // Calculate and display the weather data for the next 5 days with specific dates
   const forecastContainer = document.getElementById('forecast-container');
   const currentDate = new Date(currentData.dt * 1000);
-  for (let i = 0; i < 5; i++) {
-      const forecastIndex = i * 8;
+  for (let i = 1; i < 6; i++) {
+      const forecastIndex = i * 7;
       const day = forecastData.list[forecastIndex];
       const forecastDate = new Date(day.dt * 1000);
       const iconURL = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
@@ -111,7 +111,7 @@ const windSpeedMph = windSpeedMetersPerSecond * 2.23694; // Convert wind speed t
       const forecastDayHTML = `
           <div class="forecast-card">
           <div class="cardBack">
-              <p class="date">${i === 0 ? 'Today' : forecastDate.toDateString()}</p>
+              <p class="date">${forecastDate.toDateString()}</p>
               <img src="${iconURL}" alt="${day.weather[0].description}">
               <p><b>Temperature:</b> ${temperatureFahrenheitForecast.toFixed(2)}°F</p>
               <p><b>Humidity:</b> ${day.main.humidity}%</p>
