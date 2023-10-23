@@ -3,7 +3,11 @@ margin: 0;
 }
 
 body {
-  background-color: #f2f2f2;
+  background-image: url(./images/bodybackground.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  
   font-family: 'Roboto', sans-serif;
   color: #333;
   width: 100%;
@@ -43,19 +47,7 @@ h1 {
   justify-content: center;
 }
 
-/* #search-history{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  letter-spacing: 4px;
-  font-size: 20px;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: white;
-  margin: 10px;
-  padding: 10px;
-} */
+
 
 
 input#city-input {
