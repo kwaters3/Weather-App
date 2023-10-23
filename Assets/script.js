@@ -68,10 +68,10 @@ const windSpeedMph = windSpeedMetersPerSecond * 2.23694; // Convert wind speed t
   const currentWeatherHTML = `
     <div class="current-weather">
       <h2>${currentData.name}</h2>
-      <p>Today</p>
-      <p>Temperature: ${temperatureFahrenheit.toFixed(2)}°F</p> <!-- Display temperature in Fahrenheit -->
-      <p>Humidity: ${currentData.main.humidity}%</p>
-      <p>Wind Speed: ${windSpeedMph.toFixed(2)} mph</p> <!-- Display wind speed in mph -->
+      <p class="date">Today</p>
+      <p><b>Temperature: </b> ${temperatureFahrenheit.toFixed(2)}°F</p> <!-- Display temperature in Fahrenheit -->
+      <p><b>Humidity:</b> ${currentData.main.humidity}%</p>
+      <p><b>Wind Speed:</b> ${windSpeedMph.toFixed(2)} mph</p> <!-- Display wind speed in mph -->
       </div> 
 
       `;
@@ -104,11 +104,11 @@ const windSpeedMph = windSpeedMetersPerSecond * 2.23694; // Convert wind speed t
 
       const forecastDayHTML = `
           <div class="forecast-card">
-              <p>${i === 0 ? 'Today' : forecastDate.toDateString()}</p>
+              <p class="date">${i === 0 ? 'Today' : forecastDate.toDateString()}</p>
               <img src="${iconURL}" alt="${day.weather[0].description}">
-              <p>Temperature: ${temperatureFahrenheitForecast.toFixed(2)}°F</p>
-              <p>Humidity: ${day.main.humidity}%</p>
-              <p>Wind Speed: ${windSpeedMphForecast.toFixed(2)} mph</p>
+              <p><b>Temperature:</b> ${temperatureFahrenheitForecast.toFixed(2)}°F</p>
+              <p><b>Humidity:</b> ${day.main.humidity}%</p>
+              <p><b>Wind Speed:</b> ${windSpeedMphForecast.toFixed(2)} mph</p>
           </div>
       `;
       forecastContainer.innerHTML += forecastDayHTML;

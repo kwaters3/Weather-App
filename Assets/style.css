@@ -101,13 +101,20 @@ h2 {
 }
 
 .current-weather{
-  text-align: center;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
   border-radius: 10px;
   margin: 20px 50px;
-  padding: 20px;
+  padding: 60px;
   width: 90%;
-
+  line-height: 2;
 }
 
 #weather-info{
@@ -130,6 +137,7 @@ h2 {
 }
 
 .forecast-card{
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,6 +147,7 @@ h2 {
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px;
+  line-height: 1.75;
 }
 
 h3{
@@ -147,6 +156,11 @@ h3{
   letter-spacing: 4px;
   font-size: 30px;
   margin-top: 50px;
+}
+
+.date{
+  letter-spacing: 4px;
+  font-weight: bold;
 }
 
 
