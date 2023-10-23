@@ -20,7 +20,7 @@
  ## Visuals
  #### Click on the image below to reveal the deployed app:
 
- [![Screenshot](public/assets/images/screenshot.png)](https://kwaters3.github.io/Weather-App/)
+ [![Screenshot](./Assets/images/Screenshot_2023-10-23_19-40-51.png)](https://kwaters3.github.io/Weather-App/)
  
  
  ## Installation
