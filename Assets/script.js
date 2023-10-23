@@ -9,9 +9,15 @@ if (storedCity) {
 
 document.getElementById('city-form').addEventListener('submit', function(event) {
     event.preventDefault();
-    const cityName = document.getElementById('city-input').value;
+    const cityNameInput = document.getElementById('city-input');
+
+    console.log(cityNameInput); // Debugging line to check the input element
+
+    const cityName = cityNameInput.value;
+    cityNameInput.value = '';
+
     getWeatherData(cityName);
-});
+})
 
 cityList.addEventListener('click', function(event) {
     if (event.target.matches('li')) {
