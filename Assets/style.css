@@ -39,8 +39,8 @@ h1 {
 #search-history{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   letter-spacing: 4px;
   font-size: 20px;
   border: 1px solid black;
@@ -95,6 +95,7 @@ h2 {
 #city-list li{
   list-style-type: none;
   margin: 10px;
+  text-align: left;
 }
 
 #city-list li:hover{
@@ -185,17 +186,14 @@ h3{
     text-align: center;
   }
 
-  .forecast-card{
-    width: 200px;
-    height: 200px;
-  }
 
   .searchForm {
     float:none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
   }
+
 
   #forecast-container {
     width: 100%;
@@ -209,20 +207,52 @@ h3{
    display: flex;
    flex-direction: column;
    justify-content: center;
+   width: 70%;
   }
 
   #search-history{
     margin-top: 25px;
   }
 
+  #search-history h2{
+    font-size: 25px;
+  }
+
   .searchForm {
     margin: 10px;
   }
 
-
+h2 {
+  font-size: 30px;
+}
   
   button{
     width: 80px;
     height: 40px;
+  }
+}
+
+
+
+@media screen and (max-width: 370px) {
+h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+#search-history h2{
+  font-size: 18px;
+}
+
+
+
+  button {
+    width: 70px;
+    margin: 0;
+  }
+
+  input#city-input {
+    width: 150px;
+    margin: 0;
   }
 }
