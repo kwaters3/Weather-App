@@ -66,16 +66,19 @@ const windSpeedMetersPerSecond = currentData.wind.speed;
 const windSpeedMph = windSpeedMetersPerSecond * 2.23694; // Convert wind speed to mph
 
   const currentWeatherHTML = `
+    <div class="current-weather">
       <h2>${currentData.name}</h2>
       <p>Today</p>
       <p>Temperature: ${temperatureFahrenheit.toFixed(2)}°F</p> <!-- Display temperature in Fahrenheit -->
       <p>Humidity: ${currentData.main.humidity}%</p>
       <p>Wind Speed: ${windSpeedMph.toFixed(2)} mph</p> <!-- Display wind speed in mph -->
-  `;
+      </div> 
+
+      `;
 
   // Forecast data for the next 5 days
   const forecastWeatherHTML = `
-      <h3>5-Day Forecast:</h3>
+    <h3>5-Day Forecast:</h3>
       <div id="forecast-container">
           <!-- Display the weather data for the next 5 days from the forecast -->
       </div>
